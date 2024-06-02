@@ -62,7 +62,5 @@ button:hover {
 
 #output6 {
     color: red;
-    white-space: pre-wrap; /* Allow breaking lines in input6 */
-    word-wrap: break-word;
     max-width: 100%; /* Ensure long text wraps correctly */
 }
