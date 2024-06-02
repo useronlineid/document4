@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="captureArea">
+        <div class="input" id="output1" style="top: 20px; left: 20px;"></div>
+        <div class="input" id="output2" style="top: 60px; left: 20px;"></div>
+        <div class="input" id="output3" style="top: 100px; left: 20px;"></div>
+        <div class="input" id="output4" style="top: 140px; left: 20px;"></div>
+        <div class="input" id="output5" style="top: 180px; left: 20px;"></div>
+        <div class="input" id="output6" style="top: 220px; left: 20px; max-width: 90%;"></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+
+            document.getElementById('output1').innerText = params.get('input1');
+            document.getElementById('output2').innerText = params.get('input2');
+            document.getElementById('output3').innerText = params.get('input3');
+            document.getElementById('output4').innerText = params.get('input4');
+            document.getElementById('output5').innerText = params.get('input5');
+            document.getElementById('output6').innerText = params.get('input6');
+
+            const imageURL = "https://github.com/useronlineid/document4/blob/main/png.png?raw=true";
+            document.body.style.backgroundImage = `url(${imageURL})`;
+
+            setTimeout(() => {
+                html2canvas(document.querySelector('#captureArea')).then(canvas => {
+                    document.body.innerHTML = '';
+                    document.body.appendChild(canvas);
+                });
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
