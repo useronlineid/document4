@@ -1,0 +1,68 @@
+body {
+    font-family: 'TH Sarabun New', sans-serif;
+    background-color: #e0f7e9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    background: transparent;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    color: #2e7d32;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #1b5e20;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'TH Sarabun New', sans-serif;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'TH Sarabun New', sans-serif;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+.input {
+    color: #828282;
+    font-size: 18px;
+    position: absolute;
+}
+
+#output6 {
+    color: red;
+    white-space: pre-wrap; /* Allow breaking lines in input6 */
+    word-wrap: break-word;
+    max-width: 80%; /* Ensure long text wraps correctly */
+}
