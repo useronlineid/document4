@@ -56,7 +56,7 @@ button:hover {
 
 .input {
     color: #828282;
-    font-size: 18px;
+    font-size: 35px;
     position: absolute;
 }
 
@@ -64,5 +64,5 @@ button:hover {
     color: red;
     white-space: pre-wrap; /* Allow breaking lines in input6 */
     word-wrap: break-word;
-    max-width: 80%; /* Ensure long text wraps correctly */
+    max-width: 100%; /* Ensure long text wraps correctly */
 }
